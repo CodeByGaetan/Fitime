@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitime</title>
+    <link rel="stylesheet" href="styles/style-contact.css" />
+    <link rel="java" href="" />
+    <script>
+        function showLoading() {
+          var div = document.getElementById("loading");
+          div.style.display = 'flex';
+        }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Staatliches"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div id="loading">
+      <div class="lds-dual-ring"></div>
+    </div>
+    <a href="index.html"><i class="material-icons md-36">arrow_back</i></a>
+    <div class="logo-container">
+      <img src="images/logo.svg" alt="Logo Fitime" />
+    </div>
+    <div class="container">
+      <h1>Formulaire de contact</h1>
+      <div class="form-container">
+        <form
+          id="form"
+          action="https://formsubmit.co/6c6a8b52c3e83702ceb2c7eb35728fa9"
+          method="POST"
+          onsubmit="showLoading()"
+        >
+          <label for="email">E-mail</label>
+          <input type="email" name="email" required />
+          <label for="message">Message</label>
+          <textarea name="message" rows="10" required></textarea>
+          <button type="submit">Envoyer</button>
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://codebygaetan.github.io/Fitime/thanks.html"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.material-icons.md-36 {
+    margin: 5px;
+    font-size: 36px;
+    color: #9d72ff;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 20%;
+}
+
+.privacy {
+    width: 95%;
+    margin: auto;
+}
